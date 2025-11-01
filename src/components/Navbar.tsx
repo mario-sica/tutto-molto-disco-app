@@ -16,8 +16,8 @@ export const Navbar = () => {
 
     return (
         <>
-            <nav className="fixed top-0 left-0 w-full z-5 bg-white shadow-2" style={{height: '70px'}}>
-                <div className="flex align-items-center justify-content-center h-full px-3 md:px-4"
+            <nav className="fixed top-0 left-0 w-full z-5 bg-transparent shadow-2" style={{height: '70px'}}>
+                <div className="sticky top-0 flex align-items-center justify-content-center h-full px-3 md:px-4"
                      style={{position: 'relative'}}>
                     {/* Burger menu a sinistra */}
                     <Button

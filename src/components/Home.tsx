@@ -1,3 +1,5 @@
+import bgVideoTrast from '../assets/bgVideoTrast.mp4'
+
 export const Home = () => {
     const services = [
         {
@@ -23,7 +25,8 @@ export const Home = () => {
     ];
 
     return (
-        <section id="home" className="pt-8 px-3 md:px-6" style={{ marginTop: '70px' }}>
+        <section id="home">
+            <video className="w-full h-full bg-cover relative" src={bgVideoTrast} loop autoPlay muted />
             {/* Hero Section */}
             <div className="text-center py-6 md:py-8">
                 <h1 className="text-5xl md:text-7xl font-bold mb-4" style={{ color: '#0043af' }}>
