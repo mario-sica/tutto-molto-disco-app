@@ -16,28 +16,31 @@ export const Navbar = () => {
 
     return (
         <>
-            <nav className="fixed top-0 left-0 w-full z-5 bg-transparent shadow-2" style={{height: '70px'}}>
-                <div className="sticky top-0 flex align-items-center justify-content-center h-full px-3 md:px-4"
-                     style={{position: 'relative'}}>
+            <nav className="fixed top-0 left-0 w-full z-5 shadow-2" style={{height: '100px'}}>
+                <div className="sticky top-0 flex align-items-center justify-content-between h-full px-3 md:px-4"
+                     style={{position: 'relative', backdropFilter: 'blur(10px)'}}>
                     {/* Burger menu a sinistra */}
                     <Button
                         onClick={() => setVisible(!visible)}
-                        className="p-button-text"
-                        style={{
-                            position: 'absolute',
-                            left: '1rem',
-                            color: '#0043af',
-                            fontSize: '1.5rem'
-                        }}
+                        className="p-button-text border-circle"
                     >
-                        <i className="pi pi-bars px-3 py-2" style={{color: 'white'}}></i>
+                        <i className="pi pi-bars px-2 py-2 text-2xl" style={{color: 'white'}}></i>
                     </Button>
-                    {/* Logo al centro */}
-                    <div className="flex align-items-center">
+                    <div className="hidden md:block" style={{cursor: 'not-allowed'}}>
+                        <Button
+                            className="p-button-text p-2 text-white p-button-lg"
+                            disabled
+                        >
+                            <p className="font-bold">Ottieni biglietti</p>
+                        </Button>
+                    </div>
+                </div>
+                <div className='flex justify-content-center align-items-center h-full'>
+                    <div className="absolute mt-2 flex justify-content-center top-0 w-6 h-full">
                         <img
                             src={logo}
                             alt="Tutto Molto Disco"
-                            style={{height: '50px', width: 'auto'}}
+                            style={{height: '80px', width: 'auto'}}
                         />
                     </div>
                 </div>

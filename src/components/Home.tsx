@@ -1,4 +1,5 @@
-import bgVideoTrast from '../assets/bgVideoTrast.mp4'
+import bgVideoTrast from '../assets/bgVideo1.mp4'
+import {Button} from "primereact/button";
 
 export const Home = () => {
     const services = [
@@ -25,21 +26,26 @@ export const Home = () => {
     ];
 
     return (
-        <section id="home">
-            <video className="w-full h-full bg-cover relative" src={bgVideoTrast} loop autoPlay muted />
+        <section id="home" className='w-full h-screen'>
+            <video className="w-full h-full" style={{objectFit: 'cover'}} src={bgVideoTrast} loop autoPlay muted/>
             {/* Hero Section */}
-            <div className="text-center py-6 md:py-8">
-                <h1 className="text-5xl md:text-7xl font-bold mb-4" style={{ color: '#0043af' }}>
-                    Tutto Molto Disco
+            <div className="w-full h-full absolute top-0 flex flex-column justify-content-center align-items-center">
+                <h1 className="text-3xl md:text-5xl font-bold text-center" style={{color: 'white', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>
+                    Non é un party,<br/> é un culto.
                 </h1>
-                <p className="text-xl md:text-2xl text-600 max-w-3 mx-auto">
-                    Trasformiamo ogni evento in un'esperienza indimenticabile
-                </p>
+                <div className="mt-3 md:mt-5" style={{cursor: 'not-allowed'}}>
+                    <Button
+                        className="p-button-text p-2 text-white p-button-lg"
+                        disabled
+                    >
+                        <p className="font-bold">Ottieni biglietti</p>
+                    </Button>
+                </div>
             </div>
 
             {/* Services Section */}
             <div className="py-6 md:py-8">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-6" style={{ color: '#0043af' }}>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-6" style={{color: '#0043af'}}>
                     I Nostri Servizi
                 </h2>
                 <div className="grid">
@@ -76,7 +82,7 @@ export const Home = () => {
                                         }}
                                     ></i>
                                 </div>
-                                <h3 className="text-xl font-bold text-center mb-3" style={{ color: '#0043af' }}>
+                                <h3 className="text-xl font-bold text-center mb-3" style={{color: '#0043af'}}>
                                     {service.title}
                                 </h3>
                                 <p className="text-600 text-center line-height-3">
@@ -90,40 +96,44 @@ export const Home = () => {
 
             {/* Event Types Section */}
             <div className="py-6 md:py-8">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-6" style={{ color: '#0043af' }}>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-6" style={{color: '#0043af'}}>
                     Tipi di Eventi
                 </h2>
                 <div className="grid">
                     <div className="col-12 md:col-4 p-3">
-                        <div className="p-5 border-round-lg text-center" style={{ background: '#0043af' }}>
-                            <i className="pi pi-users text-6xl mb-3" style={{ color: 'white' }}></i>
-                            <h3 className="text-2xl font-bold mb-3" style={{ color: 'white' }}>
+                        <div className="p-5 border-round-lg text-center" style={{background: '#0043af'}}>
+                            <i className="pi pi-users text-6xl mb-3" style={{color: 'white'}}></i>
+                            <h3 className="text-2xl font-bold mb-3" style={{color: 'white'}}>
                                 Feste Private
                             </h3>
                             <p className="text-100 line-height-3">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
                             </p>
                         </div>
                     </div>
                     <div className="col-12 md:col-4 p-3">
-                        <div className="p-5 border-round-lg text-center" style={{ background: 'white', border: '2px solid #0043af' }}>
-                            <i className="pi pi-calendar text-6xl mb-3" style={{ color: '#0043af' }}></i>
-                            <h3 className="text-2xl font-bold mb-3" style={{ color: '#0043af' }}>
+                        <div className="p-5 border-round-lg text-center"
+                             style={{background: 'white', border: '2px solid #0043af'}}>
+                            <i className="pi pi-calendar text-6xl mb-3" style={{color: '#0043af'}}></i>
+                            <h3 className="text-2xl font-bold mb-3" style={{color: '#0043af'}}>
                                 Eventi Pubblici
                             </h3>
                             <p className="text-600 line-height-3">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
                             </p>
                         </div>
                     </div>
                     <div className="col-12 md:col-4 p-3">
-                        <div className="p-5 border-round-lg text-center" style={{ background: '#0043af' }}>
-                            <i className="pi pi-heart text-6xl mb-3" style={{ color: 'white' }}></i>
-                            <h3 className="text-2xl font-bold mb-3" style={{ color: 'white' }}>
+                        <div className="p-5 border-round-lg text-center" style={{background: '#0043af'}}>
+                            <i className="pi pi-heart text-6xl mb-3" style={{color: 'white'}}></i>
+                            <h3 className="text-2xl font-bold mb-3" style={{color: 'white'}}>
                                 Degustazioni Vini
                             </h3>
                             <p className="text-100 line-height-3">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
                             </p>
                         </div>
                     </div>
