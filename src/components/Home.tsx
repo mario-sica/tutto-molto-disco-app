@@ -26,20 +26,31 @@ export const Home = () => {
     ];
 
     return (
-        <section id="home" className='w-full h-screen'>
-            <video className="w-full h-full" style={{objectFit: 'cover'}} src={bgVideoTrast} loop autoPlay muted/>
-            {/* Hero Section */}
-            <div className="w-full h-full absolute top-0 flex flex-column justify-content-center align-items-center">
-                <h1 className="text-3xl md:text-5xl font-bold text-center" style={{color: 'white', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>
-                    Non é un party,<br/> é un culto.
-                </h1>
-                <div className="mt-3 md:mt-5" style={{cursor: 'not-allowed'}}>
-                    <Button
-                        className="p-button-text p-2 text-white p-button-lg"
-                        disabled
-                    >
-                        <p className="font-bold">Ottieni biglietti</p>
-                    </Button>
+        <section id="home">
+            <div className='w-full h-screen'>
+                <video className="w-full h-full" style={{objectFit: 'cover'}} src={bgVideoTrast} loop autoPlay muted/>
+                {/* Hero Section */}
+                <div
+                    className="w-full h-full absolute top-0 flex flex-column justify-content-center align-items-center"
+                >
+                    <h1 className="text-3xl md:text-5xl font-bold text-center"
+                        style={{color: 'white', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>
+                        Non é un party,<br/> é un culto.
+                    </h1>
+                    <div className="mt-3 md:mt-5" style={{cursor: 'not-allowed'}}>
+                        <Button
+                            className="p-button-text py-3 px-4 text-white p-button-lg"
+                            disabled
+                            rounded
+                        >
+                            <p className="font-bold md:text-2xl">Ottieni biglietti</p>
+                        </Button>
+                    </div>
+                <div className='w-full h-screen flex justify-content-center align-items-center'>
+                    <div className="chevron"></div>
+                    <div className="chevron"></div>
+                    <div className="chevron"></div>
+                </div>
                 </div>
             </div>
 

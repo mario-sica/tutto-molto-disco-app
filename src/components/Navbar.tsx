@@ -22,14 +22,16 @@ export const Navbar = () => {
                     {/* Burger menu a sinistra */}
                     <Button
                         onClick={() => setVisible(!visible)}
-                        className="p-button-text border-circle"
+                        className="p-button-text"
+                        rounded
                     >
-                        <i className="pi pi-bars px-2 py-2 text-2xl" style={{color: 'white'}}></i>
+                        <i className="pi pi-bars px-3 py-3 text-2xl" style={{color: 'white'}}></i>
                     </Button>
                     <div className="hidden md:block" style={{cursor: 'not-allowed'}}>
                         <Button
-                            className="p-button-text p-2 text-white p-button-lg"
+                            className="p-button-text py-2 px-3 text-white p-button-lg"
                             disabled
+                            rounded
                         >
                             <p className="font-bold">Ottieni biglietti</p>
                         </Button>

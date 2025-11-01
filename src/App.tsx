@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import { Navbar } from "./components/Navbar.tsx";
 import { Home } from "./components/Home.tsx";
 import { Eventi } from "./components/Eventi.tsx";
