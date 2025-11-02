@@ -20,7 +20,7 @@ export const Navbar = () => {
         <>
             <nav className="fixed top-0 left-0 w-full z-5 shadow-2" style={{height: '100px'}}>
                 <div className="sticky top-0 flex align-items-center justify-content-between h-full px-3 md:px-4"
-                     style={{position: 'relative', backdropFilter: 'blur(10px)'}}>
+                     style={{position: 'relative', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)'}}>
                     {/* Burger menu a sinistra */}
                     <Button
                         onClick={() => setVisible(!visible)}
@@ -29,7 +29,7 @@ export const Navbar = () => {
                     >
                         <i className="pi pi-bars text-2xl" style={{color: 'white'}}></i>
                     </Button>
-                    <div className="hidden md:block" style={{cursor: 'not-allowed'}}>
+                    <div className="hidden md:block">
                         <Button
                             className="p-button-text py-2 px-3 text-white p-button-lg"
                             onClick={() => showInfo('Non ancora!', 'Al momento non sono disponibili biglietti. 😢')}

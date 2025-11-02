@@ -19,7 +19,7 @@ export const Home = () => {
                                 style={{color: 'white', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>
                                 Non é un party,<br/> é un culto.
                             </h1>
-                            <div className="mt-3 md:mt-5" style={{cursor: 'not-allowed'}}>
+                            <div className="mt-3 md:mt-5">
                                 <Button
                                     className="p-button-text text-white p-button-lg"
                                     onClick={() => showInfo('Non ancora!', 'Al momento non sono disponibili biglietti. 😢')}
