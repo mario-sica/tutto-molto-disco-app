@@ -1,155 +1,89 @@
 import bgVideoTrast from '../assets/bgVideo1.mp4'
 import {Button} from "primereact/button";
+import {useToast} from '../contexts/ToastContext';
 
 export const Home = () => {
-    const services = [
-        {
-            icon: 'pi pi-volume-up',
-            title: 'DJ Professionista',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
-        },
-        {
-            icon: 'pi pi-sun',
-            title: 'Strumentazione Luminosa',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
-        },
-        {
-            icon: 'pi pi-shopping-bag',
-            title: 'Magliette Personalizzate',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
-        },
-        {
-            icon: 'pi pi-star',
-            title: 'Vini Selezionati',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
-        }
-    ];
+    const {showInfo} = useToast();
 
     return (
-        <section id="home">
-            <div className='w-full h-screen'>
-                <video className="w-full h-full" style={{objectFit: 'cover'}} src={bgVideoTrast} loop autoPlay muted/>
-                {/* Hero Section */}
-                <div
-                    className="w-full h-full absolute top-0 flex flex-column justify-content-center align-items-center"
-                >
-                    <h1 className="text-3xl md:text-5xl font-bold text-center"
-                        style={{color: 'white', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>
-                        Non é un party,<br/> é un culto.
-                    </h1>
-                    <div className="mt-3 md:mt-5" style={{cursor: 'not-allowed'}}>
-                        <Button
-                            className="p-button-text py-3 px-4 text-white p-button-lg"
-                            disabled
-                            rounded
-                        >
-                            <p className="font-bold md:text-2xl">Ottieni biglietti</p>
-                        </Button>
-                    </div>
-                <div className='w-full h-screen flex justify-content-center align-items-center'>
-                    <div className="chevron"></div>
-                    <div className="chevron"></div>
-                    <div className="chevron"></div>
-                </div>
-                </div>
-            </div>
-
-            {/* Services Section */}
-            <div className="py-6 md:py-8">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-6" style={{color: '#0043af'}}>
-                    I Nostri Servizi
-                </h2>
-                <div className="grid">
-                    {services.map((service, index) => (
-                        <div
-                            key={index}
-                            className="col-12 md:col-6 lg:col-3 p-3"
-                        >
-                            <div
-                                className="p-4 border-round-lg shadow-2 h-full"
-                                style={{
-                                    background: 'white',
-                                    transition: 'transform 0.3s ease',
-                                    cursor: 'pointer'
-                                }}
-                                onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-10px)'}
-                                onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-                            >
-                                <div
-                                    className="flex align-items-center justify-content-center mb-4"
-                                    style={{
-                                        width: '80px',
-                                        height: '80px',
-                                        borderRadius: '50%',
-                                        background: '#0043af',
-                                        margin: '0 auto'
-                                    }}
+        <>
+            <section id="home">
+                <div className='w-full h-screen'>
+                    <video className="w-full h-full" style={{objectFit: 'cover'}} src={bgVideoTrast} loop autoPlay
+                           muted/>
+                    {/* Hero Section */}
+                    <div
+                        className="w-full h-full absolute top-0 flex flex-column justify-content-center align-items-center"
+                    >
+                        <div className="flex flex-column justify-content-center align-items-center">
+                            <h1 className="text-3xl md:text-5xl font-bold text-center"
+                                style={{color: 'white', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>
+                                Non é un party,<br/> é un culto.
+                            </h1>
+                            <div className="mt-3 md:mt-5" style={{cursor: 'not-allowed'}}>
+                                <Button
+                                    className="p-button-text text-white p-button-lg"
+                                    onClick={() => showInfo('Non ancora!', 'Al momento non sono disponibili biglietti. 😢')}
+                                    rounded
                                 >
-                                    <i
-                                        className={service.icon}
-                                        style={{
-                                            fontSize: '2.5rem',
-                                            color: 'white'
-                                        }}
-                                    ></i>
-                                </div>
-                                <h3 className="text-xl font-bold text-center mb-3" style={{color: '#0043af'}}>
-                                    {service.title}
+                                    <p className="font-bold md:text-2xl">Ottieni biglietti</p>
+                                </Button>
+                            </div>
+                        </div>
+                        <div className='w-full absolute bottom-0 pb-8 flex justify-content-center'>
+                            <div className="chevron"></div>
+                            <div className="chevron"></div>
+                            <div className="chevron"></div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Event Types Section */}
+                <div className="py-6 md:py-8">
+                    <h2 className="text-3xl md:text-4xl font-bold text-center mb-6" style={{color: '#0043af'}}>
+                        Tipi di Eventi
+                    </h2>
+                    <div className="grid">
+                        <div className="col-12 md:col-4 p-3">
+                            <div className="p-5 border-round-lg text-center" style={{background: '#0043af'}}>
+                                <i className="pi pi-users text-6xl mb-3" style={{color: 'white'}}></i>
+                                <h3 className="text-2xl font-bold mb-3" style={{color: 'white'}}>
+                                    Feste Private
                                 </h3>
-                                <p className="text-600 text-center line-height-3">
-                                    {service.description}
+                                <p className="text-100 line-height-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
                                 </p>
                             </div>
                         </div>
-                    ))}
-                </div>
-            </div>
-
-            {/* Event Types Section */}
-            <div className="py-6 md:py-8">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-6" style={{color: '#0043af'}}>
-                    Tipi di Eventi
-                </h2>
-                <div className="grid">
-                    <div className="col-12 md:col-4 p-3">
-                        <div className="p-5 border-round-lg text-center" style={{background: '#0043af'}}>
-                            <i className="pi pi-users text-6xl mb-3" style={{color: 'white'}}></i>
-                            <h3 className="text-2xl font-bold mb-3" style={{color: 'white'}}>
-                                Feste Private
-                            </h3>
-                            <p className="text-100 line-height-3">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                            </p>
+                        <div className="col-12 md:col-4 p-3">
+                            <div className="p-5 border-round-lg text-center"
+                                 style={{background: 'white', border: '2px solid #0043af'}}>
+                                <i className="pi pi-calendar text-6xl mb-3" style={{color: '#0043af'}}></i>
+                                <h3 className="text-2xl font-bold mb-3" style={{color: '#0043af'}}>
+                                    Eventi Pubblici
+                                </h3>
+                                <p className="text-600 line-height-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="col-12 md:col-4 p-3">
-                        <div className="p-5 border-round-lg text-center"
-                             style={{background: 'white', border: '2px solid #0043af'}}>
-                            <i className="pi pi-calendar text-6xl mb-3" style={{color: '#0043af'}}></i>
-                            <h3 className="text-2xl font-bold mb-3" style={{color: '#0043af'}}>
-                                Eventi Pubblici
-                            </h3>
-                            <p className="text-600 line-height-3">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="col-12 md:col-4 p-3">
-                        <div className="p-5 border-round-lg text-center" style={{background: '#0043af'}}>
-                            <i className="pi pi-heart text-6xl mb-3" style={{color: 'white'}}></i>
-                            <h3 className="text-2xl font-bold mb-3" style={{color: 'white'}}>
-                                Degustazioni Vini
-                            </h3>
-                            <p className="text-100 line-height-3">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                            </p>
+                        <div className="col-12 md:col-4 p-3">
+                            <div className="p-5 border-round-lg text-center" style={{background: '#0043af'}}>
+                                <i className="pi pi-heart text-6xl mb-3" style={{color: 'white'}}></i>
+                                <h3 className="text-2xl font-bold mb-3" style={{color: 'white'}}>
+                                    Degustazioni Vini
+                                </h3>
+                                <p className="text-100 line-height-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 };

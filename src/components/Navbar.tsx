@@ -2,9 +2,11 @@ import {useState} from 'react';
 import {Sidebar} from 'primereact/sidebar';
 import {Button} from 'primereact/button';
 import logo from '../assets/tmd_logo.png';
+import {useToast} from '../contexts/ToastContext';
 
 export const Navbar = () => {
     const [visible, setVisible] = useState(false);
+    const {showInfo} = useToast();
 
     const menuItems = [
         {label: 'Home', path: '#home', disabled: false},
@@ -25,12 +27,12 @@ export const Navbar = () => {
                         className="p-button-text"
                         rounded
                     >
-                        <i className="pi pi-bars px-3 py-3 text-2xl" style={{color: 'white'}}></i>
+                        <i className="pi pi-bars text-2xl" style={{color: 'white'}}></i>
                     </Button>
                     <div className="hidden md:block" style={{cursor: 'not-allowed'}}>
                         <Button
                             className="p-button-text py-2 px-3 text-white p-button-lg"
-                            disabled
+                            onClick={() => showInfo('Non ancora!', 'Al momento non sono disponibili biglietti. 😢')}
                             rounded
                         >
                             <p className="font-bold">Ottieni biglietti</p>
