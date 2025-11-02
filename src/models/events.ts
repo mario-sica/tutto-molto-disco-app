@@ -19,7 +19,7 @@ export const eventRows: EventRow[] = [
         id: 2,
         image: image3,
         title: 'La nostra missione',
-        description: 'Bacon ipsum dolor amet meatloaf beef short loin ham brisket boudin jerky spare ribs shank kielbasa tail. Alcatra kevin meatball ribeye burgdoggen landjaeger short ribs bresaola brisket prosciutto kielbasa capicola.',
+        description: 'Riportare il divertimento alla sua forma più vera. Crediamo nella libertà di esprimersi e nella forza della comunità che nasce dal ballare insieme. TUTTO MOLTO DISCO vive per trasformare ogni notte in un momento che resta.',
         imagePosition: 'right'
     }
 ];
