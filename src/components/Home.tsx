@@ -1,4 +1,4 @@
-import bgVideoTrast from '../assets/bgVideo1.mp4'
+import bgVideoTrast from '../assets/bgVideo4k.mp4'
 import {Button} from "primereact/button";
 import {useToast} from '../contexts/ToastContext';
 
