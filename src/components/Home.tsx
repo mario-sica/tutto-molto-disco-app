@@ -9,7 +9,7 @@ export const Home = () => {
         <>
             <section id="home">
                 <div className='w-full h-screen'>
-                    <video className="w-full h-full" style={{objectFit: 'cover'}} src={bgVideoTrast} loop autoPlay
+                    <video className="w-full h-full" style={{objectFit: 'cover'}} src={bgVideoTrast} loop autoPlay playsInline
                            muted/>
                     <div
                         className="w-full h-full absolute top-0 flex flex-column justify-content-center align-items-center"
