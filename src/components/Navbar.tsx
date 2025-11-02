@@ -10,8 +10,7 @@ export const Navbar = () => {
 
     const menuItems = [
         {label: 'Home', path: '#home', disabled: false},
-        {label: 'InfoSection', path: '#eventi', disabled: false},
-        {label: 'Chi Siamo', path: '#chi-siamo', disabled: false},
+        {label: 'Chi Siamo', path: '#info', disabled: false},
         {label: 'Contattaci', path: '#contattaci', disabled: false},
         {label: 'Shop', path: '#shop', disabled: true}
     ];
@@ -35,7 +34,7 @@ export const Navbar = () => {
                             onClick={() => showInfo('Non ancora!', 'Al momento non sono disponibili biglietti. 😢')}
                             rounded
                         >
-                            <p className="font-bold">Ottieni biglietti</p>
+                            <p className="font-bold m-0">Ottieni biglietti</p>
                         </Button>
                     </div>
                 </div>

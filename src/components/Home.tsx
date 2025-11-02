@@ -25,7 +25,7 @@ export const Home = () => {
                                     onClick={() => showInfo('Non ancora!', 'Al momento non sono disponibili biglietti. 😢')}
                                     rounded
                                 >
-                                    <p className="font-bold md:text-2xl">Ottieni biglietti</p>
+                                    <p className="font-bold md:text-2xl m-0">Ottieni biglietti</p>
                                 </Button>
                             </div>
                         </div>

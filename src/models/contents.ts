@@ -1,13 +1,13 @@
-import type {EventCard, EventRow} from "./interfaces.ts";
-import image1 from '../assets/images/image00001.jpeg';
-import image3 from '../assets/images/image00003.jpeg';
+import type {EventCard, StoriesContent} from "./interfaces.ts";
+import image1 from '../assets/images/image00019.jpeg';
+import image3 from '../assets/images/image00015.jpeg';
 import image4 from '../assets/images/image00004.jpeg';
 import image5 from '../assets/images/image00007.jpeg';
-import image6 from '../assets/images/image00006.jpeg';
+import image6 from '../assets/images/image00018.jpeg';
 
 
 
-export const eventRows: EventRow[] = [
+export const storiesContent: StoriesContent[] = [
     {
         id: 1,
         image: image1,
@@ -17,7 +17,7 @@ export const eventRows: EventRow[] = [
     },
     {
         id: 2,
-        image: image3,
+        image: image6,
         title: 'La nostra missione',
         description: 'Riportare il divertimento alla sua forma più vera. Crediamo nella libertà di esprimersi e nella forza della comunità che nasce dal ballare insieme. TUTTO MOLTO DISCO vive per trasformare ogni notte in un momento che resta.',
         imagePosition: 'right'
@@ -39,7 +39,7 @@ export const eventCards: EventCard[] = [
     },
     {
         id: 3,
-        image: image6,
+        image: image3,
         title: 'Tutto Molto Disco risponde!',
         description: 'TUTTO MOLTO DISCO è la risposta a un bisogno semplice: tornare a sentirsi parte di qualcosa. È la nostra idea di bellezza: spontanea, imperfetta, contagiosa.'
     }

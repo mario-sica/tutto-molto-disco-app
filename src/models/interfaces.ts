@@ -1,4 +1,4 @@
-export interface EventRow {
+export interface StoriesContent {
     id: number;
     image: string;
     title: string;

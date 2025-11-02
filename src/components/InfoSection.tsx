@@ -1,10 +1,10 @@
 import {Card} from 'primereact/card';
 import {Divider} from 'primereact/divider';
-import {eventRows, eventCards} from "../models/events.ts";
+import {storiesContent, eventCards} from "../models/contents.ts";
 
 export const InfoSection = () => {
     return (
-        <section id="eventi" className="py-8 px-3 md:px-6">
+        <section id="info" className="py-8 px-3 md:px-6">
             <style>{`
                 @media (min-width: 768px) {
                     .event-row-image-left .event-image { order: 1; }
@@ -15,7 +15,7 @@ export const InfoSection = () => {
             `}</style>
 
             <div className="mt-6">
-                {eventRows.map((event) => (
+                {storiesContent.map((event) => (
                     <div
                         key={event.id}
                         className={`flex flex-column md:flex-row align-items-center gap-4 mb-6 event-row-image-${event.imagePosition}`}
@@ -28,7 +28,7 @@ export const InfoSection = () => {
                                 className="w-full border-round-lg shadow-3"
                                 style={{
                                     objectFit: 'cover',
-                                    height: '400px'
+                                    height: '30rem'
                                 }}
                             />
                         </div>
@@ -58,7 +58,7 @@ export const InfoSection = () => {
                                 loading="lazy"
                                 style={{
                                     width: '100%',
-                                    height: '250px',
+                                    height: '350px',
                                     objectFit: 'cover',
                                     borderRadius: '6px 6px 0 0'
                                 }}
