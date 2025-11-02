@@ -1,8 +1,7 @@
 import './App.scss'
 import { Navbar } from "./components/Navbar.tsx";
 import { Home } from "./components/Home.tsx";
-import { Eventi } from "./components/Eventi.tsx";
-import { ChiSiamo } from "./components/ChiSiamo.tsx";
+import { InfoSection } from "./components/InfoSection.tsx";
 import { Contattaci } from "./components/Contattaci.tsx";
 import { ToastProvider } from "./contexts/ToastContext.tsx";
 
@@ -13,8 +12,7 @@ function App() {
         <Navbar />
         <main>
           <Home />
-          <Eventi />
-          <ChiSiamo />
+          <InfoSection />
           <Contattaci />
         </main>
         <footer className="py-6 px-3 text-center" style={{ background: '#0043af', color: 'white' }}>

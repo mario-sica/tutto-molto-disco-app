@@ -2,7 +2,7 @@ import {Card} from 'primereact/card';
 import {Divider} from 'primereact/divider';
 import {eventRows, eventCards} from "../models/events.ts";
 
-export const Eventi = () => {
+export const InfoSection = () => {
     return (
         <section id="eventi" className="py-8 px-3 md:px-6">
             <style>{`
@@ -14,14 +14,6 @@ export const Eventi = () => {
                 }
             `}</style>
 
-            <div className="text-center mb-6">
-                <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{color: '#0043af'}}>
-                    Eventi
-                </h2>
-                <p className="text-xl text-600 max-w-3 mx-auto">
-                    Scopri i nostri eventi più esclusivi e le esperienze indimenticabili che abbiamo organizzato.
-                </p>
-            </div>
             <div className="mt-6">
                 {eventRows.map((event) => (
                     <div

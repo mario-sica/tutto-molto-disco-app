@@ -10,7 +10,7 @@ export const Navbar = () => {
 
     const menuItems = [
         {label: 'Home', path: '#home', disabled: false},
-        {label: 'Eventi', path: '#eventi', disabled: false},
+        {label: 'InfoSection', path: '#eventi', disabled: false},
         {label: 'Chi Siamo', path: '#chi-siamo', disabled: false},
         {label: 'Contattaci', path: '#contattaci', disabled: false},
         {label: 'Shop', path: '#shop', disabled: true}

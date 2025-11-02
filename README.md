@@ -42,7 +42,7 @@ src/
 ├── components/
 │   ├── Navbar.tsx       # Navigazione principale con sidebar
 │   ├── Home.tsx         # Pagina home con servizi
-│   ├── Eventi.tsx       # Sezione eventi
+│   ├── InfoSection.tsx       # Sezione info
 │   ├── ChiSiamo.tsx     # Chi siamo
 │   └── Contattaci.tsx   # Contatti
 ├── assets/
@@ -105,9 +105,8 @@ npm run lint
 - Panoramica dei servizi offerti (DJ, Luci, Magliette, Vini)
 - Tipi di eventi organizzati
 
-### Eventi
-- Prossimi eventi in programma
-- Archivio eventi passati
+### InfoSection
+- Chi siamo
 
 ### Chi Siamo
 - Storia dell'organizzazione
