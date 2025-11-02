@@ -36,19 +36,19 @@ export const eventCards: EventCard[] = [
     {
         id: 1,
         image: image4,
-        title: 'Casper è un bravo cane',
-        description: 'Bacon ipsum dolor amet meatloaf beef short loin ham brisket boudin jerky spare ribs shank kielbasa tail.'
+        title: 'Piú di un semplice evento',
+        description: 'TUTTO MOLTO DISCO, un gruppo di amici, una terrazza e la sensazione che la notte potesse essere diversa, più vera, più libera, più nostra.'
     },
     {
         id: 2,
         image: image5,
-        title: 'Das Damore è stato qui',
-        description: 'Bacon ipsum dolor amet meatloaf beef short loin ham brisket boudin jerky spare ribs shank kielbasa tail.'
+        title: 'Good Vibes chiamano...',
+        description: 'TUTTO MOLTO DISCO non è un brand: è un movimento leggero, fatto di persone che sanno ancora godersi il momento.'
     },
     {
         id: 3,
         image: image6,
-        title: 'Chi legge è scemo',
-        description: 'Bacon ipsum dolor amet meatloaf beef short loin ham brisket boudin jerky spare ribs shank kielbasa tail.'
+        title: 'Tutto Molto Disco risponde!',
+        description: 'TUTTO MOLTO DISCO è la risposta a un bisogno semplice: tornare a sentirsi parte di qualcosa. È la nostra idea di bellezza: spontanea, imperfetta, contagiosa.'
     }
 ];
