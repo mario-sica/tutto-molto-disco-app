@@ -30,8 +30,8 @@ Tutto Molto Disco si occupa di organizzare eventi di diverso tipo:
 ## Design
 
 - **Tema Colori**:
-  - Bianco principale (#ffffff)
-  - Blu intenso (#0043af) - colore ufficiale Tutto Molto Disco
+    - Bianco principale (#ffffff)
+    - Blu intenso (#0043af) - colore ufficiale Tutto Molto Disco
 - **Approccio**: Mobile-first responsive design
 - **Layout**: Navbar con logo centrale e burger menu a sinistra
 
