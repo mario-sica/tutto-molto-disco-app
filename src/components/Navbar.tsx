@@ -18,13 +18,13 @@ export const Navbar = () => {
 
     return (
         <>
-            <nav className="fixed top-0 left-0 w-full z-5 shadow-2" style={{height: '100px'}}>
+            <nav className="fixed top-0 left-0 w-full z-5 shadow-2 navbar-container" style={{height: '100px', minHeight: '70px' }}>
                 <div className="sticky top-0 flex align-items-center justify-content-between h-full px-3 md:px-4"
                      style={{position: 'relative', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)'}}>
                     {/* Burger menu a sinistra */}
                     <Button
                         onClick={() => setVisible(!visible)}
-                        className="p-button-text"
+                        className="p-button-text py-2 px-3"
                         rounded
                     >
                         <i className="pi pi-bars text-2xl" style={{color: 'white'}}></i>
@@ -40,11 +40,11 @@ export const Navbar = () => {
                     </div>
                 </div>
                 <div className='flex justify-content-center align-items-center h-full'>
-                    <div className="absolute mt-2 flex justify-content-center top-0 w-6 h-full">
+                    <div className="absolute mt-1 md:mt-2 flex justify-content-center top-0 w-6 h-full">
                         <img
                             src={logo}
                             alt="Tutto Molto Disco"
-                            style={{height: '80px', width: 'auto'}}
+                            className='navbar-logo'
                         />
                     </div>
                 </div>
