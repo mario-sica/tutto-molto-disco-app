@@ -12,14 +12,14 @@ export const storiesContent: StoriesContent[] = [
         id: 1,
         image: image1,
         title: 'La nostra storia',
-        description: 'Bacon ipsum dolor amet meatloaf beef short loin ham brisket boudin jerky spare ribs shank kielbasa tail. Alcatra kevin meatball ribeye burgdoggen landjaeger short ribs bresaola brisket prosciutto kielbasa capicola.',
+        description: 'Tutto Molto Disco nasce da un’idea semplice: creare eventi che non siamo solo serate, ma vere e proprie esperienze. La voglia di portare le persone nello stesso posto, con la stessa vibrazione, e farle andare a casa con la sensazione di aver vissuto un momento unico. Da lì siamo cresciuti, passo dopo passo. Abbiamo portato musica, idee e sorrisi in ville private, terrazze, secret location, sempre con un obiettivo: divertirci e far divertire. Abbiamo iniziato a creare contenuti, a raccontare le serate attraverso dei video, a costruire una community che ha deciso di seguirci perché senti che ogni evento ha un’identità diversa. Tutto Molto Disco non è solo un’organizzazione di eventi. È un modo di stare insieme.',
         imagePosition: 'left'
     },
     {
         id: 2,
         image: image6,
         title: 'La nostra missione',
-        description: 'Riportare il divertimento alla sua forma più vera. Crediamo nella libertà di esprimersi e nella forza della comunità che nasce dal ballare insieme. TUTTO MOLTO DISCO vive per trasformare ogni notte in un momento che resta.',
+        description: 'La nostra missione è trasformare ogni evento in un ricordo che vale la pena custodire. Siamo qui per creare spazi lontani dalle serate tutte uguali. Un posto dove tutti possano sentirsi liberi di viveri momenti veri e pieni di vibrazioni positive. Il nostro obiettivo è diventare un punto di riferimento per i giovani e non solo. Portando un nuovo modo di fare serata, dove stile, energia e persone si fondono per creare qualcosa di unico.',
         imagePosition: 'right'
     }
 ];

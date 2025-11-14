@@ -52,7 +52,7 @@ export const ToastProvider = ({ children }: ToastProviderProps) => {
   return (
     <ToastContext.Provider value={{ showInfo, showSuccess, showWarn, showError }}>
       {children}
-      <Toast ref={toastRef} />
+      <Toast ref={toastRef} position='top-center' />
     </ToastContext.Provider>
   );
 };
